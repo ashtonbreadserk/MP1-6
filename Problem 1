@@ -1,0 +1,23 @@
+#include <iostream>
+#include <iomanip>
+using namespace std;
+int main()
+{
+    string name;
+    int age, num;
+    double gpa, fgpa;
+    const double credit_points = 0.5;
+    
+    cout << "Name: ";
+    getline (cin,name);
+    cout << "Age: ";
+    cin >> age;
+    cout << "Sudent Number: ";
+    cin >> num;
+    cout << "GPA: ";
+    cin >> gpa;
+    fgpa = gpa + credit_points;
+    cout << fixed << setprecision(1);
+    cout << "\nFinal GPA: " << fgpa;
+    return 0;
+}
