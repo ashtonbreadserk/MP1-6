@@ -1,11 +1,18 @@
 #include <iostream>
+#include <iomanip>
 using namespace std;
 int main()
 {
-    float celsius,fahrenheit;
+    float celsius=0.0;
+    float fahrenheit=0.0;
+    
+    cout <<"\n";
     cout << "Celsius: ";
     cin >> celsius;
-    fahrenheit = (celsius * 9.0) / 5.0 + 32;
+    fahrenheit = ((9.0 / 5.0) * celsius) + 32;
+    cout << "\n"
+    cout << setprecision(1) << fixed;
     cout << "Fahrenheit: " << fahrenheit;
+    cout << "\n";
     return 0;
 }
