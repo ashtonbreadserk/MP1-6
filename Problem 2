@@ -1,0 +1,20 @@
+#include <iostream>
+#include <iomanip>
+using namespace std;
+int main()
+{
+    string name, position;
+    double base_salary, bonus;
+    int total_salary;
+    cout << "Name: ";
+    getline(cin,name);
+    cout << "Position: ";
+    getline(cin,position);
+    cout << "Base Salary: ";
+    cin >> base_salary;
+    cout << "Bonus: ";
+    cin >> bonus;
+    total_salary = base_salary + bonus;
+    cout << "Total Salary: " << total_salary;
+    return 0;
+}
