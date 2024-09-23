@@ -1,10 +1,10 @@
-#include ‹iostream›
-#include ‹string› 
+#include <iostream>
+#include <string>
 using namespace std;
 int main() { 
 double length, width, area, perimeter;
 cout << "Length: ";
-cin >> Length;
+cin >> length;
 cout << "width: ";
  cin >> width;
 area = (length * width);
