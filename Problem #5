@@ -1,38 +1,16 @@
 #include <iostream>
-#include <iomanip>
+#include <iomanip> 
 using namespace std;
-class BMI {
-private:
-    double weight;  
-    double height; 
-public:
-    BMI(double w, double h) {
-        weight = w;
-        height = h;
-    }
-
-    double calculateBMI() {
-        return weight / (height * height);
-    }
-
-    void displayBMI() {
-        cout << fixed << setprecision(2); 
-        cout << "Weight: " << weight << " kg" << endl;
-        cout << "Height: " << height << " m" << endl;
-        cout << "Your BMI is: " << calculateBMI() << endl;
-    }
-};
 int main() {
-    double weight, height;
-
-    cout << "Enter your weight in kilograms (kg): ";
-    cin >> weight;
-    cout << "Enter your height in meters (m): ";
-    cin >> height;
-
-    BMI person(weight, height);
-
-    person.displayBMI();
-
-    return 0;
+double weight, height, BMI;
+cout << "Enter your weight in kilograms (kg): "; 
+cin >> weight;
+cout << "Enter your height in meters (m): ";
+cin >> height;
+BMI = weight / (height * height); 
+cout << fixed << setprecision (2); 
+cout << "Weight: " << weight << " kg" << endl;
+cout << "Height: " << height << " m" << endl;
+cout << "Your BMI is: " << BMI << endl;
+return 0;
 }
